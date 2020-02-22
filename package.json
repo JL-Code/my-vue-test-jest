@@ -8,6 +8,9 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "pre-commit": [
+    "test:unit"
+  ],
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
@@ -27,6 +30,7 @@
     "eslint-plugin-vue": "^6.1.2",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "pre-commit": "^1.2.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
